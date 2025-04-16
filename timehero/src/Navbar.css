@@ -8,10 +8,6 @@
   color: white;
   z-index: 1000;
 }
-.navbar h1 {
-  font-size: 24px;
-  margin: 0;
-}
 .navbar ul {
     list-style-type: none;
     margin: 0;
