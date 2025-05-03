@@ -40,3 +40,19 @@
 .read-the-docs {
   color: #888;
 }
+
+/* Timer styles */
+.timer-container {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.timer-title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.timer-value {
+  font-size: 1.5rem;
+  color: #555;
+}
