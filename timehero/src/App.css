@@ -45,14 +45,45 @@
 .timer-container {
   margin-top: 100px;
   text-align: center;
+  font-family: Arial, sans-serif;
+  color: #333;
 }
 
 .timer-title {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: bold;
+  margin-bottom: 1rem;
 }
 
 .timer-value {
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.timer-controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.timer-controls button {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.timer-controls button:hover {
+  background-color: #0056b3;
+}
+
+.timer-controls button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
 }
