@@ -1,19 +1,26 @@
-  import React from 'react';
-    import './Navbar.css';
-    function Navbar() {
-    return (
-        <nav className='navbar'>
-            <ul>
-                <li>
-                    <a href="/">Timer</a>
-                </li>
-                <li>
-                    <a href="/about">About</a>
-                </li>
-              
-            </ul>
-        </nav>
-    );
-}
+import { Link } from 'react-router-dom';
+import './Navbar.css';
+
+const Navbar = () => {
+  return (
+    <nav className="navbar">
+      <div className="navbar-content">
+        <h1>TimeHero</h1>
+        <div className="nav-links">
+          <Link to="/" className="nav-link" style={{
+            color: window.location.pathname === '/' ? '#ffffff' : '#666666'
+          }}>
+            Timer
+          </Link>
+          <Link to="/about" className="nav-link" style={{
+            color: window.location.pathname === '/about' ? '#ffffff' : '#666666'
+          }}>
+            About
+          </Link>
+        </div>
+      </div>
+    </nav>
+  );
+};
 
 export default Navbar;
